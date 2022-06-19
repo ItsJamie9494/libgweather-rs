@@ -10,7 +10,7 @@ description = "Rust bindings for libgweather"
 license = "MIT"
 repository = "https://github.com/ItsJamie9494/libgweather-rs"
 documentation = "https://itsjamie9494.github.io/libgweather-rs"
-categories = ["api-bindings", "weather", "gweather"]
+categories = ["api-bindings"]
 keywords = ["gtk-rs", "gnome", "weather", "gweather"]
 
 [package.metadata.system-deps.gweather4]
