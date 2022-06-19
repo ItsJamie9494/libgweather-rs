@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["libgweather"] = [{"text":"impl ParentClassIs for <a class=\"struct\" href=\"libgweather/struct.Info.html\" title=\"struct libgweather::Info\">Info</a>","synthetic":false,"types":["libgweather::auto::info::Info"]},{"text":"impl ParentClassIs for <a class=\"struct\" href=\"libgweather/struct.Location.html\" title=\"struct libgweather::Location\">Location</a>","synthetic":false,"types":["libgweather::auto::location::Location"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
