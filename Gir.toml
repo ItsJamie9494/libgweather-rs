@@ -1,0 +1,62 @@
+[options]
+library = "GWeather"
+version = "4.0"
+target_path = "."
+min_cfg_version = "4.0"
+work_mode = "normal"
+girs_directories = ["./gir-files", "."]
+use_gi_docgen = true
+generate_safety_asserts = true
+deprecate_by_min_version = true
+# with this option enabled, versions for gir and gir-files saved only to one file to minimize noise
+single_version_file = true
+generate_builder = true
+trust_return_value_nullability = true
+
+generate = [
+    "GWeather.MoonLatitude",
+    "GWeather.MoonPhase",
+    "GWeather.ConditionPhenomenon",
+    "GWeather.ConditionQualifier",
+    "GWeather.FormatOptions",
+    "GWeather.Provider",
+    "GWeather.DistanceUnit",
+    "GWeather.TemperatureUnit",
+    "GWeather.PressureUnit",
+    "GWeather.Sky",
+    "GWeather.SpeedUnit",
+    "GWeather.WindDirection",
+    "GWeather.LocationLevel",
+    "GWeather.FilterFunc"
+]
+
+manual = [
+    "GLib.Variant",
+    "GLib.Error",
+    "Gio.Cancellable",
+    "GLib.DestroyNotify",
+    "Gio.AsyncReadyCallback",
+    "Gio.AsyncResult",
+    "GLib.TimeZone",
+    "GWeather.Conditions"
+]
+
+[[object]]
+name = "GWeather.Location"
+status = "generate"
+    [[object.function]]
+    name = "detect_nearest_city"
+    manual = true
+    [[object.function]]
+    name = "free_timezones"
+    ignore = true # C Only
+    
+[[object]]
+name = "GWeather.Info"
+status = "generate"
+    [[object.function]]
+    name = "update"
+    manual = true
+    [[object.function]]
+    name = "get_update"
+    manual = true
