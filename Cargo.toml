@@ -15,6 +15,9 @@ edition = "2021"
 [lib]
 name = "libgweather"
 
+[features]
+dox = []
+
 [package.metadata.docs.rs]
 features = ["dox"]
 
